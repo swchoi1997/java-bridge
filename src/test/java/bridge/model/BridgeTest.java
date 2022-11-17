@@ -4,7 +4,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import bridge.AppConfig;
+import global.config.AppConfig;
 import bridge.BridgeFactory;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;

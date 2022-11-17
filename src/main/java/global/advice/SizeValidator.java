@@ -1,4 +1,4 @@
-package advice;
+package global.advice;
 
 public abstract class SizeValidator {
     private static final int MIN_LENGTH = 1;

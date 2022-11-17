@@ -1,8 +1,8 @@
 package bridge.model;
 
-import static advice.SizeValidator.checkIsDigit;
-import static advice.SizeValidator.checkLength;
-import static advice.SizeValidator.checkRange;
+import static global.advice.SizeValidator.checkIsDigit;
+import static global.advice.SizeValidator.checkLength;
+import static global.advice.SizeValidator.checkRange;
 
 import bridge.BridgeFactory;
 import java.util.List;
@@ -18,7 +18,7 @@ public class Bridge {
 
     public Bridge(BridgeFactory bridgeFactory, String size) {
         validation(size);
-        this.bridge = bridgeFactory.makeBridge(size);
+        this.bridge = bridgeFactory.makeBridge(Integer.parseInt(size));
     }
 
     private void validation(String size) {

@@ -1,4 +1,8 @@
-package bridge;
+package global.config;
+
+import bridge.BridgeFactory;
+import bridge.BridgeMaker;
+import bridge.BridgeRandomNumberGenerator;
 
 public class AppConfig {
 
