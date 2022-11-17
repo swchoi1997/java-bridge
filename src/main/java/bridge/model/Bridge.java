@@ -18,7 +18,7 @@ public class Bridge {
 
     public Bridge(BridgeFactory bridgeFactory, String size) {
         validation(size);
-        this.bridge = bridgeFactory.makeBridge(Integer.parseInt(size));
+        this.bridge = bridgeFactory.makeBridge(size);
     }
 
     private void validation(String size) {
