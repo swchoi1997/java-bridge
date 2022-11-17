@@ -24,16 +24,16 @@ class BridgeMakerTest {
 
     @DisplayName("입력한 숫자만큼 다리길이가 생성된다")
     @ParameterizedTest(name = "{displayName} : {0}")
-    @ValueSource(strings = {"3", "4", "5", "6", "7", "8", "9", "10", "11"})
-    void makeBridge(String input) {
+    @ValueSource(ints = {3, 4, 5, 6, 7, 8, 9, 10, 11})
+    void makeBridge(int input) {
         List<String> bridge = bridgeFactory.makeBridge(input);
-        assertThat(bridge.size()).isEqualTo(Integer.parseInt(input));
+        assertThat(bridge.size()).isEqualTo(input);
     }
 
     @DisplayName("다리는 U/D 문자로 이루어져있다.")
     @ParameterizedTest(name = "{displayName} : {0}")
-    @ValueSource(strings = {"3", "4", "5", "6", "7", "8", "9", "10", "11"})
-    void checkBridgeConsistOfUOrD(String input) {
+    @ValueSource(ints = {3, 4, 5, 6, 7, 8, 9, 10, 11})
+    void checkBridgeConsistOfUOrD(int input) {
         for (String bridgeShape : bridgeFactory.makeBridge(input)) {
             assertTrue(STANDARD_BRIDGE.contains(bridgeShape));
         }
