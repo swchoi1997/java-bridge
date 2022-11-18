@@ -31,6 +31,16 @@ public class Bridge {
         return bridge.get(step).equals(userPick);
     }
 
+    //TODO 다리길이보다 입력이 긴 경우 예외처리
+    public boolean canGoOrNot(List<String> step, String userPick) {
+        return bridge.get(step.size() - 1).equals(userPick);
+    }
+
+    public boolean isCrossing(int step) {
+        System.out.println(step + " " + this.bridge.size());
+        return step == this.bridge.size();
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {

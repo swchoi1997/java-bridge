@@ -8,6 +8,8 @@ public class InputView {
     private static final String MOVING_MESSAGE = "이동할 칸을 선택해주세요. (위: U, 아래: D)";
     private static final String GAME_COMMAND_MESSAGE = "게임을 다시 시도할지 여부를 입력해주세요. (재시도: R, 종료: Q)";
 
+    //TODO while로 정확한 입력이 들어오면 진행 안들어오면 무한실행
+
     /**
      * 다리의 길이를 입력받는다.
      */
