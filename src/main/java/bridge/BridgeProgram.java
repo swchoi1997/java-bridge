@@ -35,7 +35,7 @@ public class BridgeProgram {
         outputView.printResult(stepResponse);
     }
 
-    private static String checkProgress(BridgeGame bridgeGame, StepResponseDto stepResponse) {
+    private String checkProgress(BridgeGame bridgeGame, StepResponseDto stepResponse) {
         if (!stepResponse.isSuccess()) {
             return bridgeGame.retry(inputView.readGameCommand());
         }
